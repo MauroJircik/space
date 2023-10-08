@@ -1,0 +1,77 @@
+PROJETO:
+- criar uma pasta "nome do projeto" no diretório C:
+Na pasta do projeto:
+1. instalar python-3.11.4-amd64 (site)
+2. instalar virtualvenv-20.24.5.tar.gz (site)
+No vscode
+
+Virtualvenv:
+1. abrir o folder "nome do projeto"
+2. digitar no terminal:
+- criar a pasta venv:
+alura-space> virtualenv venv
+- ativar a pasta venv:
+alura-space>.\venv\Scripts\Activate
+(venv)alura-space>
+- instalar o django:
+(venv)alura-space> pip install django
+Obs: se aparecer qqer mensagem de instalar, instalar.
+- ex:(venv)alura-space>pip install --upgrade pip
+
+Servidor:
+- as versões do projeto para funcionar
+(venv)alura-space>pip freeze
+asgiref==3.5.2(3.5.2)
+Django==4.2.4(4.1)
+sqlarse==0.4.4(4.2)
+tzdata==2023.3
+- arquivo .txt para armazenar os dados sempre que instalar algo pip install:
+(venv)alura-space>pip freeze > requirements.txt
+  Obs: comando django: (venv)alura-space>django-admin help
+Iniciando o projeto:
+(venv)alura-space>django-admin startproject setup .
+     (o ponto evita que se crie outra pasta dentro da pasta)
+no arquivo manage.py, clicar ctrl+shift+P
+- visualizar Python: Select interpreter
+- aparece a versão do python: Python 3.11.4('venv':venv)
+- seleciona.
+  Obs: isso para não rodar outras versões do python onstaladas.
+Visualização:
+(venv)alura-space>python manage.py runserver
+- aparece o link do servidor: http://127.0.0.1:800 (ctrl+clicar)
+  Obs: para sair ctrl+C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
